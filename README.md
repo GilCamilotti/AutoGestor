@@ -1,51 +1,52 @@
 # AutoGestor
 
-## Sobre o projeto
-
-O AutoGestor é um projeto acadêmico de um sistema de gerenciamento para oficinas mecânicas. A proposta é organizar informações de clientes, veículos e serviços realizados.
+Sistema de gerenciamento de oficina mecânica desenvolvido no Projeto Integrador da disciplina Projeto de Software.
 
 ## Objetivo
 
-Centralizar os registros da oficina, facilitando o acompanhamento dos serviços, a consulta do histórico de manutenção e a comunicação com os clientes.
+Organizar informações de clientes, veículos e serviços de pequenas oficinas mecânicas, facilitando o acompanhamento dos consertos e o acesso ao histórico de manutenção.
 
 ## Problema identificado
 
-Pequenas oficinas frequentemente utilizam anotações em papel, cadernos e mensagens dispersas para registrar informações. Isso pode causar perda de dados, dificuldade para consultar históricos, atrasos e falta de controle sobre o andamento dos consertos.
+Pequenas oficinas frequentemente utilizam anotações em papel, cadernos e mensagens para registrar clientes, veículos e serviços. Isso pode causar perda de dados, dificuldade de consulta, atrasos e falta de controle sobre os consertos.
 
-## Usuários e stakeholders
+## Usuários
 
 - Proprietário ou gerente da oficina
-- Mecânicos
 - Atendentes
+- Mecânicos
 - Clientes
 
 ## Funcionalidades iniciais
 
-- Cadastro de clientes
-- Cadastro de veículos vinculados aos clientes
-- Registro de serviços solicitados
-- Criação de ordens de serviço
+- Cadastro de clientes e veículos
+- Registro de serviços e ordens de serviço
 - Atualização do status dos serviços
-- Consulta do histórico de serviços por veículo
-- Consulta de serviços em andamento e concluídos
+- Consulta do histórico de manutenção
 - Registro das datas de entrada e saída dos veículos
 
 ## Requisitos não funcionais
 
-- Usabilidade: interface simples e fácil de utilizar.
-- Segurança: funcionalidades administrativas protegidas por login e senha.
-- Desempenho: consultas e cadastros com respostas em tempo adequado.
-- Confiabilidade: armazenamento correto das informações, evitando perdas.
+- Interface simples e fácil de utilizar
+- Acesso administrativo protegido por login e senha
+- Consultas e cadastros com resposta em tempo adequado
+- Armazenamento confiável das informações
+
+## Arquitetura e modelagem
+
+O E2 organiza o sistema em cinco blocos: interface web, API e regras de negócio, módulo de clientes e veículos, módulo de ordens de serviço e banco de dados.
+
+Os requisitos revisados, a arquitetura, os diagramas UML, as interfaces, os dados, os riscos e o plano de acompanhamento estão em [`docs/AutoGestor_Exercicio2_Arquitetura_UML.md`](docs/AutoGestor_Exercicio2_Arquitetura_UML.md).
 
 ## Escopo inicial
 
-### Dentro do escopo
+### Incluído
 
-Cadastro e consulta de clientes e veículos, registro de serviços, ordens de serviço, atualização do andamento, histórico de manutenção e registro de entrada e saída dos veículos.
+Cadastro e consulta de clientes e veículos, registro de serviços, criação de ordens de serviço, atualização do andamento, histórico de manutenção e datas de entrada e saída.
 
-### Fora do escopo inicial
+### Fora do escopo
 
-Pagamento online, emissão de notas fiscais, controle de estoque de peças, integração com aplicativos de mensagens, aplicativo exclusivo para dispositivos móveis e gestão financeira completa.
+Pagamento online, emissão de notas fiscais, estoque de peças, integração com aplicativos de mensagens, aplicativo móvel exclusivo e gestão financeira completa.
 
 ## Equipe
 
@@ -54,17 +55,18 @@ Pagamento online, emissão de notas fiscais, controle de estoque de peças, inte
 
 ## Disciplina
 
-Projeto de Software - Curso de Análise e Desenvolvimento de Sistemas
-
-## Professor
-
-Jefferson Brandão
+Projeto de Software — Professor Jefferson Brandão Moreira
 
 ## Status
 
-Definição inicial do projeto e documentação de requisitos e escopo.
+Documentação inicial, requisitos, arquitetura e modelagem do Exercício 2 organizados no repositório.
 
-## Commits sugeridos
+## Repositório
 
-1. `docs: adicionar README inicial do projeto`
-2. `docs: documentar requisitos e escopo do sistema`
+https://github.com/GilCamilotti/AutoGestor
+
+## Commits do Exercício 2
+
+- `docs: atualizar README com arquitetura e UML do E2`
+- `docs: adicionar arquitetura, diagramas UML e plano do E2`
+- `docs: adicionar PDF do exercício 2`
