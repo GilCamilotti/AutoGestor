@@ -57,9 +57,13 @@ Pagamento online, emissão de notas fiscais, estoque de peças, integração com
 
 Projeto de Software — Professor Jefferson Brandão Moreira
 
+## Análise estruturada
+
+O [Exercício 4](docs/AutoGestor_Exercicio4_DFD.md) reúne o diagrama de contexto, o DFD nível 0, o dicionário de dados e o relatório de ajustes.
+
 ## Status
 
-Documentação inicial, requisitos, arquitetura e modelagem do Exercício 2 organizados no repositório.
+Documentação inicial, requisitos, arquitetura e modelagem dos exercícios 2 e 4 organizados no repositório. A implementação executável ainda precisa ser versionada.
 
 ## Repositório
 
