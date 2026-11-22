@@ -61,9 +61,22 @@ Projeto de Software — Professor Jefferson Brandão Moreira
 
 O [Exercício 4](docs/AutoGestor_Exercicio4_DFD.md) reúne o diagrama de contexto, o DFD nível 0, o dicionário de dados e o relatório de ajustes.
 
+## Executar o MVP 0.1.0
+
+Use Python 3.11 ou superior. Execute a sequência abaixo em uma pasta nova para usar um banco vazio.
+
+```sh
+python autogestor.py cliente "Cliente exemplo"
+python autogestor.py veiculo 1 ABC-1234 "Modelo A" 2020
+python autogestor.py abrir-os ABC1234 "Revisão"
+python autogestor.py consultar-os 1
+```
+
+O SQLite cria o banco local na primeira execução. Use `--banco caminho.sqlite3` antes do subcomando para escolher outro arquivo. Consulte o [plano incremental](docs/AutoGestor_Exercicio5_Incrementos.md) e o [CHANGELOG](CHANGELOG.md).
+
 ## Status
 
-Documentação inicial, requisitos, arquitetura e modelagem dos exercícios 2 e 4 organizados no repositório. A implementação executável ainda precisa ser versionada.
+O MVP de terminal implementa o cadastro e a abertura e consulta inicial da OS. Serviços, histórico, API e acesso por perfil compõem os próximos incrementos.
 
 ## Repositório
 
