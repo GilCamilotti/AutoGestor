@@ -1,0 +1,12 @@
+test_chave_estrangeira_e_placa_unica (test_autogestor.IntegrationTests.test_chave_estrangeira_e_placa_unica) ... ok
+test_abre_banco_da_versao_0_1 (test_autogestor.SystemTests.test_abre_banco_da_versao_0_1) ... ok
+test_conclusao_invalida_nao_altera_historico (test_autogestor.SystemTests.test_conclusao_invalida_nao_altera_historico) ... ok
+test_fluxo_completo_persiste_em_novos_processos (test_autogestor.SystemTests.test_fluxo_completo_persiste_em_novos_processos) ... ok
+test_converte_valores_sem_arredondamento (test_autogestor.UnitTests.test_converte_valores_sem_arredondamento) ... ok
+test_normaliza_placas (test_autogestor.UnitTests.test_normaliza_placas) ... ok
+test_rejeita_placa_com_expansao_unicode (test_autogestor.UnitTests.test_rejeita_placa_com_expansao_unicode) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.574s
+
+OK

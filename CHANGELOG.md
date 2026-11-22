@@ -1,5 +1,18 @@
 # Changelog do AutoGestor
 
+## 1.0 — Versão final da entrega
+
+### Adicionado
+
+- Lançamento de serviços e cálculo do total em centavos.
+- Controle de status, histórico de eventos e data de saída na conclusão.
+- Critérios de conclusão, plano de testes, evidências de execução e roteiro da defesa.
+- Compatibilidade com bancos SQLite do incremento 0.1.
+
+### Corrigido
+
+- Entradas com caracteres Unicode que se expandiam na conversão para maiúsculas passaram a ser rejeitadas antes da normalização da placa.
+
 ## 0.1.0 — Primeiro incremento funcional
 
 ### Adicionado
@@ -14,7 +27,6 @@
 
 - A placa é normalizada no cadastro e na abertura da OS. A restrição de unicidade impede cadastros duplicados por variação de caixa, espaços ou hífen. A validação aceita os padrões clássico e Mercosul.
 
-## Próximos incrementos
+## Evolução planejada
 
-- 0.2.0 — Registro de serviços, transições de status, histórico e data de saída.
-- 0.3.0 — Interface web, API e acesso por perfil.
+- Interface web, API e acesso por perfil.

@@ -61,22 +61,29 @@ Projeto de Software — Professor Jefferson Brandão Moreira
 
 O [Exercício 4](docs/AutoGestor_Exercicio4_DFD.md) reúne o diagrama de contexto, o DFD nível 0, o dicionário de dados e o relatório de ajustes.
 
-## Executar o MVP 0.1.0
+## Instalação e execução da versão 1.0
 
-Use Python 3.11 ou superior. Execute a sequência abaixo em uma pasta nova para usar um banco vazio.
+Baixe ou clone o repositório e entre na pasta do projeto. Use Python 3.11 ou superior, com o módulo SQLite da biblioteca padrão. Nenhum pacote do pip é necessário.
+
+O exemplo usa um banco novo e dados fictícios. Se já existir um banco com esse nome, escolha outro para que os identificadores do exemplo comecem em 1.
 
 ```sh
-python autogestor.py cliente "Cliente exemplo"
-python autogestor.py veiculo 1 ABC-1234 "Modelo A" 2020
-python autogestor.py abrir-os ABC1234 "Revisão"
-python autogestor.py consultar-os 1
+python autogestor.py --banco demo.sqlite3 cliente "Cliente exemplo"
+python autogestor.py --banco demo.sqlite3 veiculo 1 ABC-1234 "Modelo A" 2020
+python autogestor.py --banco demo.sqlite3 abrir-os ABC1234 "Revisão"
+python autogestor.py --banco demo.sqlite3 status-os 1 "Em andamento"
+python autogestor.py --banco demo.sqlite3 servico 1 "Inspeção" 90.10
+python autogestor.py --banco demo.sqlite3 status-os 1 "Concluída"
+python autogestor.py --banco demo.sqlite3 consultar-os 1
 ```
 
-O SQLite cria o banco local na primeira execução. Use `--banco caminho.sqlite3` antes do subcomando para escolher outro arquivo. Consulte o [plano incremental](docs/AutoGestor_Exercicio5_Incrementos.md) e o [CHANGELOG](CHANGELOG.md).
+O banco padrão é `autogestor.sqlite3`. A versão 1.0 cria as tabelas adicionais quando abre um banco da 0.1. O encerramento da OS registra a data de saída, exige pelo menos um serviço e bloqueia novos lançamentos. O sistema local depende das permissões do arquivo SQLite.
+
+Execute os testes com `python -m unittest discover -s tests -v`. Veja o [plano de testes, análise de segurança e roteiro da defesa](docs/AutoGestor_Exercicio6_Testes_Seguranca.md), a [evidência de execução](docs/evidencia-e6.txt), o [plano incremental](docs/AutoGestor_Exercicio5_Incrementos.md) e o [CHANGELOG](CHANGELOG.md).
 
 ## Status
 
-O MVP de terminal implementa o cadastro e a abertura e consulta inicial da OS. Serviços, histórico, API e acesso por perfil compõem os próximos incrementos.
+A versão 1.0 local permite cadastrar clientes e veículos, conduzir uma OS, registrar serviços e consultar o histórico.
 
 ## Repositório
 
